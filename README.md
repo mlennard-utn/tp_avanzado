@@ -9,7 +9,7 @@ El archivo de salida tiene un registro más simple para cada uno, con ticker, pr
 Por ejemplo, registro de entrada
 `` `
   {
-    "Moneda: USD",
+    "currency: USD",
     "ticker": "H",
     "exchange": "USNYSE",
     "id": "US4485791028",
