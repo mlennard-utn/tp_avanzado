@@ -34,12 +34,12 @@ $ ./myprogram https://github.com/mlennard-utn/tp_avanzado/blob/master/mercado.js
 [
   {
     "ticker": "ABC",
-    "precio": 10.5,
+    "price": 10.5,
     "isin": "US1234567890"
   },
   {
     "ticker": "BBB",
-    "precio": 400,
+    "price": 400,
     "isin": "US0987654321"
   },
   ...
