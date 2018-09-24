@@ -2,7 +2,7 @@
 
 Escriba un programa Java que recupere un archivo de datos a través de HTTP desde una URL dada y emite otro archivo con un subconjunto de la información de la primera. Debería tomar un parámetro de línea de comando, el URL del archivo de entrada.
 
-El archivo de entrada está en (https://github.com/mlennard-utn/tp_avanzado/blob/master/mercado.json), una lista JSON de valores negociados públicamente con algunos metadatos para cada uno.
+El archivo de entrada está en (https://raw.githubusercontent.com/mlennard-utn/tp_avanzado/master/mercado.json), una lista JSON de valores negociados públicamente con algunos metadatos para cada uno.
 
 El archivo de salida tiene un registro más simple para cada uno, con ticker, price e ISIN (etiquetado como `id` en los datos de origen). El campo `price` no debe tener ceros al final. El ticker es opcional en el archivo de entrada y dichos registros deben incluirse en el archivo de salida, con un campo de cotización establecido en nulo.
 
