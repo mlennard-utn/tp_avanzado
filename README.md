@@ -30,7 +30,7 @@ Lista como salida
 
 Ejemplo de ejecución del programa
 `` `
-$ ./myprogram https://github.com/mlennard-utn/tp_avanzado/blob/master/mercado.json
+$ ./myprogram https://raw.githubusercontent.com/mlennard-utn/tp_avanzado/master/mercado.json
 [
   {
     "ticker": "ABC",
