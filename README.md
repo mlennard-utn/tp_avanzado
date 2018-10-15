@@ -7,7 +7,7 @@ El archivo de entrada está en (https://raw.githubusercontent.com/mlennard-utn/t
 El archivo de salida tiene un registro más simple para cada uno, con ticker, price e ISIN (etiquetado como `id` en los datos de origen). El campo `price` no debe tener ceros al final. El ticker es opcional en el archivo de entrada y dichos registros deben incluirse en el archivo de salida, con un campo de cotización establecido en nulo.
 
 Por ejemplo, registro de entrada
-`` `
+'''
   {
     "currency: USD",
     "ticker": "H",
@@ -16,20 +16,20 @@ Por ejemplo, registro de entrada
     "price": 51.3100,
     "name": "Hyatt Hotels Corporation"
   }
-`` `
+'''
 
 Lista como salida
 
-`` `
+'''
   {
     "ticker": "H",
     "price": 51.31,
     "isin": "US4485791028"
   }
-`` `
+'''
 
 Ejemplo de ejecución del programa
-`` `
+'''
 $ ./myprogram https://raw.githubusercontent.com/mlennard-utn/tp_avanzado/master/mercado.json
 [
   {
@@ -44,7 +44,8 @@ $ ./myprogram https://raw.githubusercontent.com/mlennard-utn/tp_avanzado/master/
   },
   ...
 ]
-`` `
+'''
+
 ---
 
 # Parte 2 - Alertas de Préstamo
@@ -62,7 +63,7 @@ Datos de préstamo JSON: https://github.com/mlennard-utn/tp_avanzado/blob/master
 Por ejemplo, la primera cuenta que figura en el archivo (`loan1`) tiene 10 posiciones con un valor total, de acuerdo con los datos de precios de la parte 1, de $ 18,006,225.05. El monto pendiente de su préstamo es de $ 533,492 por lo que este préstamo está totalmente garantizado y no debe figurar en el archivo de salida.
 
 Ejemplo de ejecución del programa (tenga en cuenta que los números son para fines ilustrativos, no provienen de los datos anteriores):
-`` `
+'''
 $ ./myprogram2 marketdata.json loandata.json
 
 [
@@ -74,7 +75,7 @@ $ ./myprogram2 marketdata.json loandata.json
   },
 ...
 ]
-`` `
+'''
 
 ---
 ---
