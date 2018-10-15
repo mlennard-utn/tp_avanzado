@@ -45,6 +45,7 @@ $ ./myprogram https://raw.githubusercontent.com/mlennard-utn/tp_avanzado/master/
   ...
 ]
 `` `
+---
 
 # Parte 2 - Alertas de Préstamo
 
@@ -75,10 +76,16 @@ $ ./myprogram2 marketdata.json loandata.json
 ]
 `` `
 
+---
+---
+
 ## Link util con tutorial de Jackson Mapper:
 
 http://tutorials.jenkov.com/java-json/jackson-objectmapper.html
 
+
+---
+---
 
 # Entregable:
 
@@ -94,6 +101,6 @@ El resultado de la ejecucion del programa debería ser un archivo con extensión
 
 Como resultado de la ejecución se mostrará en la pantalla el json solicitado y se generará un archivo con cierto nombre (por ejemplo marketdata.json) en el mismo directorio donde se está ejecutando.
 
-# La segunda parte del ejercicio se debe probar ejecutando el siguiente comando:
+## La segunda parte del ejercicio se debe probar ejecutando el siguiente comando:
 '''java -jar market.data-0.0.1-jar-with-dependencies.jar marketdata.json loandata.json'''
 
