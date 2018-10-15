@@ -80,3 +80,20 @@ $ ./myprogram2 marketdata.json loandata.json
 http://tutorials.jenkov.com/java-json/jackson-objectmapper.html
 
 
+# Entregable:
+
+## Una vez descargado el codigo fuente (luego de hacer el checkout del repositorio que me indican) se debe ejecutar el siguiente comando: 
+'''mvn clean compile assembly:single''' (o botón derecho sobre el projecto -> Run as -> Maven build... -> en la sección goals colocar clean compile assembly:single)
+
+El resultado de la ejecucion del programa debería ser un archivo con extensión .jar en la carpeta "target" (sin hay algún error se debe revisar el contenido del tag <mainClass> colocando el paquete y nombre de la clase que posee el metodo main para la ejecucion del programa)
+
+## La ejecución de la primera parte del ejercicio debería ser ejecutando el siguiente comando:
+'''cd target''' (o posicionarse donde el archivo jar haya sido generado)
+'''java -jar market.data-0.0.1-jar-with-dependencies.jar https://raw.githubusercontent.com/mlennard-utn/tp_avanzado/master/mercado.json'''
+(en este caso el jar de ejemplo que se usa es market.data-0.0.1-jar-with-dependencies.jar)
+
+Como resultado de la ejecución se mostrará en la pantalla el json solicitado y se generará un archivo con cierto nombre (por ejemplo marketdata.json) en el mismo directorio donde se está ejecutando.
+
+# La segunda parte del ejercicio se debe probar ejecutando el siguiente comando:
+'''java -jar market.data-0.0.1-jar-with-dependencies.jar marketdata.json loandata.json'''
+
